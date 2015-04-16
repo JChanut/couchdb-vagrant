@@ -26,9 +26,8 @@ apt-get -y --force-yes install couchdb
 # manage via upstart
 stop couchdb
 
-rm -rf /etc/nginx/sites-enabled
+# update /etc/couchdb/local.ini with 'bind_address=0.0.0.0' as needed and our config
 cp -r /vagrant/config/local.ini /etc/couchdb/local.ini
 
-# update /etc/couchdb/local.ini with 'bind_address=0.0.0.0' as needed
 start couchdb
 
