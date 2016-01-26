@@ -1,5 +1,7 @@
 #!/bin/bash
 
+apt-get -y update
+
 # install couchdb
 # install the ppa-finding tool
 # for 12.04 release
