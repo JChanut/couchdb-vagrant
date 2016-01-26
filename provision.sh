@@ -1,13 +1,5 @@
 #!/bin/bash
 
-apt-get -y update
-
-# install nodejs
-dpkg -s npm &>/dev/null || {
-  apt-get -y install nodejs npm
-  ln -s /usr/bin/nodejs /usr/bin/node
-}
-
 # install couchdb
 # install the ppa-finding tool
 # for 12.04 release
